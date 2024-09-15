@@ -11,21 +11,33 @@
     />
     <style>
       .hero-section {
-        background-image: url('https://via.placeholder.com/1500x500'); /* Add a suitable background image */
+        background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your background image */
         background-size: cover;
         background-position: center;
         color: #fff;
+        padding: 80px 0; /* Adjust padding for hero section */
       }
       .hero-section img {
-        border: 5px solid #fff; /* Add a white border around the profile image */
+        border: 5px solid #fff;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
       }
       .card {
         border-radius: 10px;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.2s; /* Smooth transition for hover effect */
+      }
+      .card:hover {
+        transform: translateY(-10px); /* Elevate card on hover */
       }
       .form-control:focus {
         box-shadow: none;
         border-color: #0056b3;
+      }
+      footer {
+        background-color: #17a2b8;
+      }
+      footer p {
+        margin: 0;
       }
     </style>
   </head>
@@ -56,7 +68,7 @@
     </header>
 
     <!-- Hero Section -->
-    <section class="hero-section text-center py-5">
+    <section class="hero-section text-center">
       <div class="container">
         <img
           src="./Snehal.jpeg"
@@ -92,7 +104,7 @@
     <section id="skills" class="container my-5">
       <h2 class="mb-4">Skills</h2>
       <div class="row">
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">HTML & CSS</h5>
@@ -103,7 +115,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">JavaScript</h5>
@@ -114,7 +126,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mb-4">
           <div class="card">
             <div class="card-body">
               <h5 class="card-title">React</h5>
@@ -145,8 +157,8 @@
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 my-4 bg-info">
-        <p class="text-center text-white">© 2024 Company, Inc</p>
+    <footer class="py-3 my-4 bg-info text-white">
+        <p class="text-center mb-0">© 2024 Company, Inc</p>
     </footer>
 
     <!-- Bootstrap JS and dependencies -->
