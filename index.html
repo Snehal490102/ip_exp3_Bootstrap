@@ -11,14 +11,18 @@
     />
     <style>
       .hero-section {
-        background-color: #d0e7f9; /* Light blue background color */
-        color: #fff; /* Text color to ensure readability on light background */
+        background-image: url('https://via.placeholder.com/1500x500'); /* Replace with your background image */
+        background-size: cover;
+        background-position: center;
+        color: #fff; /* Default text color */
         padding: 80px 0; /* Adjust padding for hero section */
-        position: relative; /* Make sure the image and text align correctly */
       }
       .hero-section img {
         border: 5px solid #fff;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      }
+      .hero-section .text-black {
+        color: #000; /* Text color for content below the image */
       }
       .card {
         border-radius: 10px;
@@ -75,8 +79,13 @@
           class="img-fluid rounded-circle mb-3"
           style="width: 200px; height: 200px;"
         />
-        <h1 class="display-4">Snehal Patil</h1>
-        <p class="lead">Web Developer & Designer</p>
+        <h1 class="display-4 text-white">Snehal Patil</h1>
+        <p class="lead text-white">Web Developer & Designer</p>
+        <!-- Added the class for black text color below the image -->
+        <div class="text-black mt-3">
+          <h2>Welcome to My Portfolio</h2>
+          <p>This is a brief introduction to my work and skills. Feel free to explore and get in touch if you have any questions or opportunities.</p>
+        </div>
       </div>
     </section>
 
